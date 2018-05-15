@@ -67,6 +67,7 @@ body {
 #user-total-int {
     text-align: center;
     font-size: 48px;
+    margin-top: -20px;
     margin-bottom: 1em;
     background-image: url('../images/triangular_@2X.png');
 }
