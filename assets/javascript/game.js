@@ -10,9 +10,7 @@ var btn_1_Val;
 var btn_2_Val;
 var btn_3_Val;
 var btn_4_Val;
-var stats =
-    '<p>Wins: ' + wins + '</p>' +
-    '<p>Losses: ' + losses + '</p>';
+
 
 // ===========================================================================
 // FUNCTIONS
@@ -33,6 +31,11 @@ var win = function () {
     document.querySelector('#message').innerHTML = "You've Won!";
 };
 
+function stats() {
+    return '<p>Wins: ' + wins + '</p>' +
+    '<p>Losses: ' + losses + '</p>';
+};
+
 var lose = function () {
     losses++;
     addText();
@@ -42,7 +45,7 @@ var lose = function () {
 
 var addText = function () {
     document.querySelector('#target').innerHTML = target;
-    document.querySelector('#score').innerHTML = stats;
+    document.querySelector('#score').innerHTML = stats();
     document.querySelector('#user-total-int').innerHTML = total;
 };
 
@@ -74,25 +77,25 @@ $(document).ready(function() {
         if (total <= target || total >= target) {
             if (total == target) {
                 win();
-                console.log(wins);
+                // console.log(wins);
             }
             else if (total > target) {
                 lose();
-                console.log(losses);
+                // console.log(losses);
             }
         }
     });
-    console.log(btn_1_Val);
-    console.log(btn_2_Val);
-    console.log(btn_3_Val);
-    console.log(btn_4_Val);
-    console.log("==============================");
-    console.log(typeof btn_1_Val);
-    console.log("==============================");
-    console.log($('#btn_1').attr('value'));
-    console.log($('#btn_2').attr('value'));
-    console.log($('#btn_3').attr('value'));
-    console.log($('#btn_4').attr('value'));
-    console.log("==============================");
-    console.log(typeof $('#btn_1').attr('value'));
+    // console.log(btn_1_Val);
+    // console.log(btn_2_Val);
+    // console.log(btn_3_Val);
+    // console.log(btn_4_Val);
+    // console.log("==============================");
+    // console.log(typeof btn_1_Val);
+    // console.log("==============================");
+    // console.log($('#btn_1').attr('value'));
+    // console.log($('#btn_2').attr('value'));
+    // console.log($('#btn_3').attr('value'));
+    // console.log($('#btn_4').attr('value'));
+    // console.log("==============================");
+    // console.log(typeof $('#btn_1').attr('value'));
 });
