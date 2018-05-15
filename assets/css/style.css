@@ -1,4 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+#target,
+#message,
+#score,
+#user-total-txt,
+#user-total-int {
+    font-family: 'Lora', serif;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-image: url('../images/hypnotize.png');
+    margin: .75em 0;
+    padding: .4em 0;
+}
+
 .control {
-    width: 3em;
-    height: 2em;
+    width: 90%;
+    height: 5em;
+}
+
+body {
+    background-image: url('../images/footer_lodyas.png');
+}
+
+.instructions {
+    background-image: url('../images/mooning_@2X.png');
+    padding: 1em 4em;
+    margin-bottom: 2em;
+}
+
+#target,
+.info {
+    background-image: url('../images/triangular_@2X.png');
+    height: 100px;
+    text-align: center;
+}
+
+#target {
+    padding-top: .25em;
+    font-size: 48px;
+}
+
+.info {
+    padding-top: .9em;
+}
+
+.input {
+    margin-top: 2em;
+}
+
+#user-total-txt {
+    text-align: center;
+    margin-top: 2em;
+    padding-top: .9em;
+    background-image: url('../images/triangular_@2X.png');
+}
+
+#user-total-int {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 1em;
+    background-image: url('../images/triangular_@2X.png');
+}
+
+#btn_1 {
+    background-image: url('../images/Diamond_1.jpg');
+    background-position: center;
+    background-position-x: -12px;
+}
+
+#btn_2 {
+    background-image: url('../images/Diamond_2.jpg');
+    background-position: center;
+    background-position-x: -12px;
+}
+
+#btn_3 {
+    background-image: url('../images/Diamond_3.jpg');
+    background-position: center;
+    background-position-x: -16px;
+}
+
+#btn_4 {
+    background-image: url('../images/Diamond_4.jpg');
+    background-position-x: -15px;
+    background-position-y: -54px;
 }
