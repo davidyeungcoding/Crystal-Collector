@@ -28,12 +28,14 @@ var gameStart = function () {
 
 var win = function () {
     wins++;
+    addText();
     gameStart();
     document.querySelector('#message').innerHTML = "You've Won!";
 };
 
 var lose = function () {
     losses++;
+    addText();
     gameStart();
     document.querySelector('#message').innerHTML = "You Lose";
 };
@@ -66,22 +68,17 @@ $(document).ready(function() {
 
     gameStart();
 
-    $('.input').click('control', function () {
-        console.log(total);
-        console.log(typeof total);
-        console.log("==============================");
-        // total += parseInt($(this).attr('value'));
-        total = total + $(this).attr('value');
-        console.log(parseInt(total));
-        console.log($(this).val);
-        console.log(typeof $(this).val);
-        if (total < target) {
-            // total += $(this).val();
-            if (total = target) {
+    $('.control').click(function () {
+        total += parseInt($(this).attr('value'));
+        addText();
+        if (total <= target || total >= target) {
+            if (total == target) {
                 win();
+                console.log(wins);
             }
             else if (total > target) {
                 lose();
+                console.log(losses);
             }
         }
     });

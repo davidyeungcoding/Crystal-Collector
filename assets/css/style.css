@@ -34,6 +34,7 @@ body {
 .instructions {
     background-image: url('../images/mooning_@2X.png');
     padding: 1em 4em;
+    padding-top: 1.5em;
     margin-bottom: 2em;
 }
 
