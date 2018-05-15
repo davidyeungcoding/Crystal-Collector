@@ -77,25 +77,10 @@ $(document).ready(function() {
         if (total <= target || total >= target) {
             if (total == target) {
                 win();
-                // console.log(wins);
             }
             else if (total > target) {
                 lose();
-                // console.log(losses);
             }
         }
     });
-    // console.log(btn_1_Val);
-    // console.log(btn_2_Val);
-    // console.log(btn_3_Val);
-    // console.log(btn_4_Val);
-    // console.log("==============================");
-    // console.log(typeof btn_1_Val);
-    // console.log("==============================");
-    // console.log($('#btn_1').attr('value'));
-    // console.log($('#btn_2').attr('value'));
-    // console.log($('#btn_3').attr('value'));
-    // console.log($('#btn_4').attr('value'));
-    // console.log("==============================");
-    // console.log(typeof $('#btn_1').attr('value'));
 });
