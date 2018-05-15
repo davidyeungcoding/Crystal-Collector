@@ -52,10 +52,11 @@ var btnValues = function () {
 };
 
 var assignValues = function () {
-    $('#btn_1').append($(this)).val(parseInt(btn_1_Val));
-    $('#btn_2').append($(this)).val(parseInt(btn_2_Val));
-    $('#btn_3').append($(this)).val(parseInt(btn_3_Val));
-    $('#btn_4').append($(this)).val(parseInt(btn_4_Val));
+    $('#btn_1').val().append(btn_1_Val);
+    // $('#btn_1').append($(this)).val(btn_1_Val);
+    // $('#btn_2').append($(this)).val(btn_2_Val);
+    // $('#btn_3').append($(this)).val(btn_3_Val);
+    // $('#btn_4').append($(this)).val(btn_4_Val);
 };
 
 // ===========================================================================
@@ -66,11 +67,15 @@ $(document).ready(function() {
 
     gameStart();
 
-    $('.input').click('.control', function() {
-        total = target + $(this).value;
-        
+    $('.input').click('control', function () {
+        if (total < target) {
+            total += $(this).val();
+            if (total = target) {
+                win();
+            }
+            else if (total > target) {
+                lose();
+            }
+        }
     });
-
 });
-
-// console.log(btnValues());
