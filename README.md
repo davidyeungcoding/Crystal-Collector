@@ -1,3 +1,3 @@
 # Crystal Collector
 
-https://yeungpirate.github.io/Gem-Game/
+https://yeungpirate.github.io/Crystal-Collector/.
