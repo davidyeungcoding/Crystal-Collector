@@ -1,3 +1,3 @@
-# unit-4-game
+# Gem-Game
 
 https://yeungpirate.github.io/Gem-Game/
