@@ -1,3 +1,3 @@
 # Crystal Collector
 
-https://yeungpirate.github.io/Crystal-Collector/
+https://davidyeungcoding.github.io/Crystal-Collector/
